@@ -25,3 +25,23 @@ To assist **The League** in optimizing flight schedules, the following tasks hav
 
 This analysis provides actionable insights for **The League** to manage resources efficiently and minimize operational costs in the upcoming season.
 
+## Project Approach
+
+### 1. Visualize the Number of Teams Simultaneously Flying
+- **Objective:** Determine how many teams are in-flight at the same time throughout the season.
+- **Steps:**
+  - Concatenate the `departure_datetime` and `landing_datetime` into a single sorted array for visualization.
+  - Create a table with two columns: `datetime` and `number_in_air` to track how many teams are in the air at any given time.
+  - Sort the datetimes chronologically, ensuring proper visualization, such as using a line graph.
+  - Iterate through each flight to check if it was mid-air at a specific time and increment the `number_in_air` accordingly.
+
+- **Visualization:** Use a line or scatter plot to visualize the trends and identify the maximum number of teams in flight.
+
+### 2. Project Next Year’s Fuel Spend
+- **Objective:** Estimate fuel costs for the 2102 season using a SARIMAX model for fuel price forecasting.
+- **Steps:**
+  - Use SARIMAX with parameters `order = (1, 1, 1)` for linear growth and `seasonal_order = (1, 0, 0, 7)` for weekly seasonality to forecast fuel prices for 2102.
+  - Create a DataFrame for future dates and join it with the forecasted fuel prices.
+  - Match forecasted fuel prices to flight data based on departure date and ensure date formats are compatible.
+  - Compute fuel costs per flight by multiplying fuel prices with the flight distance.
+  - Sum the costs to determine the total fuel expenditure for the 2102 season.
