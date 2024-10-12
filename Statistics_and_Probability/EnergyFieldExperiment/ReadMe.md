@@ -89,6 +89,7 @@ To install the required packages, you can use the following commands:
 
 ```bash
 pip install pandas seaborn scipy statsmodels
+```
 
 ## Conclusion
 This project enables you to explore the energy sector's environmental impact by analyzing CO2 emissions. By completing the steps, you'll gain practical skills in experimental design identification, data visualization, and statistical analysis, which are essential for analyzing real-world energy data.
