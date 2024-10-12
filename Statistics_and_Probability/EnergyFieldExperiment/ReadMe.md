@@ -1,3 +1,4 @@
+![image](https://github.com/MohidulHaqueTushar/Skills-Based-Projects/blob/main/Statistics_and_Probability/EnergyFieldExperiment/Data/co2.png)
 # Exploring Experimental Design in the Energy Field
 
 ## Project Overview
